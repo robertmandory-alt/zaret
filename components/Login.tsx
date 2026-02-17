@@ -51,8 +51,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
         {/* Abstract shapes */}
-        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-emergency-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-3xl"></div>
         {/* Pattern overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#444 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
       </div>
@@ -67,8 +67,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                  <path d="M0 100 C 20 0 50 0 100 100 Z" fill="url(#grad1)" />
                  <defs>
                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                     <stop offset="0%" style={{stopColor:'rgb(220, 38, 38)', stopOpacity:1}} />
-                     <stop offset="100%" style={{stopColor:'rgb(37, 99, 235)', stopOpacity:1}} />
+                     <stop offset="0%" style={{stopColor:'rgb(59, 130, 246)', stopOpacity:1}} />
+                     <stop offset="100%" style={{stopColor:'rgb(30, 64, 175)', stopOpacity:1}} />
                    </linearGradient>
                  </defs>
                </svg>
@@ -79,7 +79,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 <Activity className="text-white" size={32} />
              </div>
              <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
-               سامانه جامع مدیریت<br/>عملکرد <span className="text-emergency-500">اورژانس</span>
+               سامانه جامع مدیریت<br/>عملکرد <span className="text-blue-400">اورژانس</span>
              </h2>
              <p className="text-slate-300 text-sm leading-relaxed opacity-90">
                مدیریت هوشمند شیفت‌ها، پایش دقیق عملکرد پرسنل و گزارش‌گیری پیشرفته جهت ارتقای کیفیت خدمات اورژانس کشور.
@@ -88,7 +88,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
            <div className="relative z-10 mt-12">
              <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
-               <div className="w-12 h-12 rounded-full bg-emergency-600 flex items-center justify-center text-white font-bold shadow-lg shadow-emergency-600/40">
+               <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold shadow-lg shadow-blue-600/40">
                  115
                </div>
                <div>
@@ -102,7 +102,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         {/* Right Side (Form) */}
         <div className="flex-1 p-8 md:p-12 flex flex-col justify-center">
           <div className="text-center mb-8 md:hidden">
-             <Ambulance className="mx-auto text-emergency-600 mb-2" size={48} />
+             <Ambulance className="mx-auto text-blue-600 mb-2" size={48} />
              <h1 className="text-2xl font-bold text-slate-800">ورود به سامانه</h1>
           </div>
 
@@ -126,14 +126,14 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">نام کاربری</label>
                 <div className="relative group">
-                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 group-focus-within:text-emergency-600 transition-colors">
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 group-focus-within:text-blue-600 transition-colors">
                     <User size={20} />
                   </div>
                   <input
                     type="text"
                     value={username}
                     onChange={(e) => handleInputChange(setUsername, e.target.value)}
-                    className="block w-full pr-10 pl-3 py-3 border border-slate-200 rounded-xl leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emergency-500/20 focus:border-emergency-500 transition-all duration-200"
+                    className="block w-full pr-10 pl-3 py-3 border border-slate-200 rounded-xl leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200"
                     placeholder="نام کاربری خود را وارد کنید"
                     autoComplete="username"
                   />
@@ -143,14 +143,14 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">رمز عبور</label>
                 <div className="relative group">
-                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 group-focus-within:text-emergency-600 transition-colors">
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 group-focus-within:text-blue-600 transition-colors">
                     <Lock size={20} />
                   </div>
                   <input
                     type="password"
                     value={password}
                     onChange={(e) => handleInputChange(setPassword, e.target.value)}
-                    className="block w-full pr-10 pl-3 py-3 border border-slate-200 rounded-xl leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emergency-500/20 focus:border-emergency-500 transition-all duration-200"
+                    className="block w-full pr-10 pl-3 py-3 border border-slate-200 rounded-xl leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200"
                     placeholder="••••••••"
                     autoComplete="current-password"
                   />
@@ -167,7 +167,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-lg shadow-emergency-600/20 text-sm font-medium text-white bg-emergency-600 hover:bg-emergency-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emergency-500 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-0.5"
+                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-lg shadow-blue-600/20 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-0.5"
               >
                 {loading ? (
                   <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -190,7 +190,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
               </p>
               <button 
                 onClick={() => setActiveTab('signin')}
-                className="text-emergency-600 font-medium hover:text-emergency-700 text-sm"
+                className="text-blue-600 font-medium hover:text-blue-700 text-sm"
               >
                 بازگشت به ورود
               </button>
